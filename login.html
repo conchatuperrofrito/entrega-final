@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="assets/css/stylesLogint.css" />
+  </head>
+  <body>
+    <h2 class="colorStifler2">Disfruta de Nuestros Nuevos <br> Servicios En Nuestra Plataforma</h2>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form method="post" action="registrar.php">
+          <h1 class="colorStifler">Crear una cuenta</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span class="colorStifler"> use su correo electrónico para registrarse </span>
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="email" placeholder="Email" name="email" required />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <button>INSCRIBIRSE</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="logintPHP.php" method="post">
+          <h1 class="colorStifler">Iniciar sesión</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span class="colorStifler">Usa tu cuenta </span>
+          <input type="email" placeholder="Email" name="emailName" required />
+          <input
+            type="password"
+            placeholder="Password"
+            name="passwordName"
+            required
+          />
+          <a href="#">¿Olvidaste tu Contraseña?</a>
+          <button name="register">Siguiente</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>¡Bienvenido de nuevo! </h1>
+            <p>
+              Para mantenerse conectado con nosotros, inicie sesión con su información personal
+            </p>
+            <button class="ghost" id="signIn">Iniciar Secion </button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>¡Hola, amigo!</h1>
+            <p>Ingresa tus datos personales y comienza tu viaje con nosotros</p>
+            <button class="ghost" id="signUp">INSCRIBIRSE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Desarrolladores <i class="fa fa-heart"></i> por Lucho carlos Checcaña y Arturo Letona Porras 
+        <a target="_blank" href="https://florin-pop.com">Para mayor Informacion</a> Visita a nuestra plataforma,
+        Unete al desafio de una Nueva Experiencia 
+        <a
+          target="_blank"
+          
+        >.
+      </p>
+    </footer>
+    <script src="assets/js/mianLogint.js"></script>
+  </body>
+</html>
